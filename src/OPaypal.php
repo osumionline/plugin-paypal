@@ -173,7 +173,7 @@ class OPaypal {
 	 * @return void
 	 */
 	public function setItems(array $list): void {
-		$this->items = $items;
+		$this->items = $list;
 	}
 
 	/**
