@@ -210,11 +210,11 @@ class OPaypal {
 	/**
 	 * Get the custom element list
 	 *
-	 * @param string $key Optional key of a custom element, if null then returns the whole list
+	 * @param string | null $key Optional key of a custom element, if null then returns the whole list
 	 *
 	 * @return array|string|int|float|bool List of custom items or requested item
 	 */
-	public function getCustom(string $key=null) {
+	public function getCustom(string | null $key = null) {
 		if (is_null($key)) {
 			return $this->custom;
 		}
